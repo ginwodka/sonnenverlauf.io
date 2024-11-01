@@ -10,3 +10,4 @@ To run locally clone this repository and then
 `npm install`
 
 `npm run dev`
+# sonnenverlauf.io

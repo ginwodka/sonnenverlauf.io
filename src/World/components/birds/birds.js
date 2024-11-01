@@ -3,7 +3,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 async function loadBirds() {
   const gltfLoader = new GLTFLoader()
-  const parrotData = await gltfLoader.loadAsync('/assets/models/Parrot.glb')
+  const parrotData = await gltfLoader.loadAsync('/sonnenverlauf.io/assets/models/Parrot.glb')
   const parrot = parrotData.scene;
   const clip = parrotData.animations[0];
   const mixer = new AnimationMixer(parrot)

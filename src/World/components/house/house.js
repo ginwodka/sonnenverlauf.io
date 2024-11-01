@@ -5,10 +5,10 @@ import { setupModel } from './setupModel'
 
 async function loadHouse() {
   const dracoLoader = new DRACOLoader()
-  dracoLoader.setDecoderPath('/draco/')
+  dracoLoader.setDecoderPath('/sonnenverlauf.io/draco/')
   const gltfLoader = new GLTFLoader()
   gltfLoader.setDRACOLoader(dracoLoader)
-  const houseData = await gltfLoader.loadAsync('/assets/models/House-c.glb')
+  const houseData = await gltfLoader.loadAsync('/sonnenverlauf.io/assets/models/House-c.glb')
   const house = setupModel(houseData)
   house.traverse(n => {
     if (n.isMesh) {

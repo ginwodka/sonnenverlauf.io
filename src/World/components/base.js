@@ -19,7 +19,7 @@ function createBase(params) {
   // Direction labels
   const fontLoader = new FontLoader()
 
-  fontLoader.load('fonts/droid_sans_bold.typeface.json', function (font) {
+  fontLoader.load('/sonnenverlauf.io/fonts/droid_sans_bold.typeface.json', function (font) {
     const fontMaterial = new MeshBasicMaterial({
       color: 'black'
     })
